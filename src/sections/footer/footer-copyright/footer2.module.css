@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 75%;
+  padding: 20px;
+}
+
+.left {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 11px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialIcons a {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  background-color: var(--icons-gray);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  filter: invert(1);
+}
+
+.right {
+  width: 250px;
+
+  background: var(--icons-gray);
+  border-right: 16px solid var(--icons-gray);
+  border: 2px solid var(--white);
+  border-radius: 50px;
+  padding: 0 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right:hover,
+.select {
+  cursor: pointer;
+}
+
+.right:focus-within {
+  outline: 2px solid var(--white);
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  outline: none;
+
+  width: 217px;
+  height: 48px;
+
+  border: none;
+  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
